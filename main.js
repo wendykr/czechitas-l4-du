@@ -85,7 +85,7 @@ button[1].addEventListener('click',
 	if (vstupStreet == '') {
         alert('Ulice je povinný údaj');
     } else {
-        let vstupNumber = prompt('Číslo:');
+        let vstupNumber = Number(prompt('Číslo:'));
 
         if (vstupNumber == '') {
             alert('Číslo je povinný údaj');
@@ -117,6 +117,7 @@ button[1].addEventListener('click',
                     `;
 
                     document.body.innerHTML = content;
+                    console.log(content);
 
                     button[1].classList.add('hidden');
                 }
